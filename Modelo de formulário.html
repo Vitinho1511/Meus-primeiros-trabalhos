@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+  <meta charset="UTF-8">
+  <title>Pesquisa de Satisfação de Navegação</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    form {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    label, input, textarea {
+      display: block;
+      margin-bottom: 10px;
+    }
+    fieldset {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">GLAUCO ROBERTO PEREIRA SILVA</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">7000.00000000000</mso:Order>
+<mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">GLAUCO ROBERTO PEREIRA SILVA</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+<mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
+<mso:ReferenceId msdt:dt="string"></mso:ReferenceId>
+<mso:ContentTypeId msdt:dt="string">0x01010008BEB715C185E54BAF8A1943C70E7EFC</mso:ContentTypeId>
+<mso:TriggerFlowInfo msdt:dt="string"></mso:TriggerFlowInfo>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+
+  <header>
+    <h1>Meu Site</h1>
+    <h2>Pesquisa de Satisfação de Navegação</h2>
+  </header>
+
+  <form id="form-pesquisa" action="#" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <fieldset>
+      <legend>Avaliação de Navegação</legend>
+      <label>
+        <input type="radio" name="avaliacao" value="1"> 1 Estrela
+      </label>
+      <label>
+        <input type="radio" name="avaliacao" value="2"> 2 Estrelas
+      </label>
+      <label>
+        <input type="radio" name="avaliacao" value="3"> 3 Estrelas
+      </label>
+      <label>
+        <input type="radio" name="avaliacao" value="4"> 4 Estrelas
+      </label>
+      <label>
+        <input type="radio" name="avaliacao" value="5"> 5 Estrelas
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Feedback</legend>
+      <label>
+        <input type="checkbox" name="feedback" value="Facilidade de Navegação"> Facilidade de Navegação
+      </label>
+      <label>
+        <input type="checkbox" name="feedback" value="Design do Site"> Design do Site
+      </label>
+      <label>
+        <input type="checkbox" name="feedback" value="Velocidade de Carregamento"> Velocidade de Carregamento
+      </label>
+    </fieldset>
+
+    <label for="comentarios">Comentários Adicionais:</label>
+    <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <h2>Dados Submetidos</h2>
+  <pre id="dados-submetidos">
+    <!-- Simulação do Armazenamento dos Dados -->
+    <!-- Os dados coletados serão exibidos aqui -->
+  </pre>
+
+</body>
+</html>
